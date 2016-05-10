@@ -1,6 +1,7 @@
 # VRS-flights-db
-Code to export Virtual Radar Server flight records and track logs to a MySQL database.  This is the code used to power http://flights.hillhome.org.
-Also includes example pages written in PHP to display flight info.
+Code to export Virtual Radar Server flight records and track logs to a MySQL database. 
+
+These instructions are for a simplified “all on one box” Linux deployment that is most likely not secured enough for public access i.e. I was not aiming to replicate public web server like http://flights.hillhome.org but rather run a version of this running on my private network. It works great BTW.
 
 ##Prerequisites
 - VRS installed and running
