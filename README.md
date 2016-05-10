@@ -29,8 +29,10 @@ source path/to/track_mlat_lookup.sql
 ```
 
 ###Install sqlite for Linux
-On Ubuntu this is typically done as follows : sudo apt-get install sqlite3
-
+On Ubuntu this is typically done as follows : 
+```
+sudo apt-get install sqlite3
+```
 
 ###Linux scripts
 Place the files from the scripts directory of this repository in a directory of your choice on the VRS host:
@@ -59,7 +61,9 @@ You will now need to use schedule the script db_query.sh to run every 5 minutes,
 
 This time enter the following line :
 
+```
 */5 * * * * [path to]/db_query.sh >/dev/null
+```
 
 That should complete the setup.  New flight records will be added to the flights table every 5 minutes, and the track log and MLAT flag will be merged in from the track_mlat_lookup table as part of the import process.
 
