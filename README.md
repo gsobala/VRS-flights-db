@@ -36,10 +36,13 @@ sudo apt-get install sqlite3
 
 ###Linux scripts
 Place the files from the scripts directory of this repository in a directory of your choice on the VRS host:
-- db_query.bat
-- db_query.vbs
+- db_query.sh
 - dbquerycommands.txt
 
+The file db_query needs to be executable so do this :
+```
+sudo chmod +x db_query.sh
+```
 Double check all the paths in these files, as your setup may differ.
 
 ###PHP scripts
