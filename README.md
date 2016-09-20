@@ -8,6 +8,11 @@ These instructions are for a simplified “all on one box” Linux deployment th
 - VRS database writer plugin configured and enabled
 - A web server running PHP and MySQL. These instructions assume you will be using a Linux host, although you can use any OS.
 - [phpMyAdmin](https://www.phpmyadmin.net) is very helpful for viewing your MySQL tables to ensure records are being populated correctly.
+- On Raspbian php5-msql has a bug that throws an exception with flightimport.php so instead use
+```
+sudo apt-get install php5-mysqlnd 
+```
+  
 
 ##Instructions
 Note: These instructions are not exhaustive.  You will need to be handy with Linux, MySQL, etc.  If you encounter issues, please log them here and I will update the documentation.
